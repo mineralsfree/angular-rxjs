@@ -1,0 +1,6 @@
+<div  *ngFor="let todo of todosStore.todos$ | async">{{todo.title}}
+  <input
+    type="checkbox"
+    [checked]="todo.isCompleted"
+  />
+</div>
